@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./src/imgs-002/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Nosso Cantinho</title>
+</head>
+
+<body>
+    <main class="cartao">
+
+        <div class="nossas-informacoes">
+         <h3>   Nosso Cantinho</h3>
+        </div>
+
+        <div class="conteudo">
+
+            <ul class="abas">
+                <li class="aba selecionado" id="sobre-nos">
+                    <img src="./src/imgs-002/nUs.gif" alt="icone de sobre mim">
+                </li>
+                <li class="aba" id="nossa-playlist">
+                    <img src="./src/imgs-002/coracao.gif" alt="icone de redes sociais">
+                </li>
+            </ul>
+
+            <div class="informacoes-abas">
+
+                <div class="informacao selecionado" id="informacao-sobre-nos">
+                    <div class="wrapper">
+                        <div class="slide-wrapper" data-slide="wrapper">
+                            <button class="slide-nav-button slide-nav-previous fas fa-chevron-left"
+                                data-slide="nav-previous-button"></button>
+                            <button class="slide-nav-button slide-nav-next fas fa-chevron-right"
+                                data-slide="nav-next-button"></button>
+                            <div class="slide-list" data-slide="list">
+                                <div class="slide-item" data-slide="item" data-index="0">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-00.jpeg" alt="" />
+
+                                    </div>
+                                </div>
+                                <div class="slide-item" data-slide="item" data-index="1">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-001.jpeg" alt="" />
+
+                                    </div>
+                                </div>
+                                <div class="slide-item" data-slide="item" data-index="2">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-002.jpeg" alt=" " />
+
+                                    </div>
+                                </div>
+                                <div class="slide-item" data-slide="item" data-index="3">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-003.jpeg" alt="" />
+
+                                    </div>
+                                </div>
+                                <div class="slide-item" data-slide="item" data-index="4">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-004.jpeg" alt="" />
+
+                                    </div>
+                                </div>
+                                <div class="slide-item" data-slide="item" data-index="5">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-005.jpeg" alt="" />
+
+                                    </div>
+                                </div>
+                                <div class="slide-item" data-slide="item" data-index="6">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-006.jpeg" alt="" />
+
+                                    </div>
+                                </div>
+                                <div class="slide-item" data-slide="item" data-index="7">
+                                    <div class="slide-content">
+                                        <img class="slide-image" src="./src/imgs-002/foto-007.jpeg" alt="" />
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-controls" data-slide="controls-wrapper">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="informacao" id="informacao-nossa-playlist">
+
+                    <h3>
+                        clique em "Nossa Playlist" para ouvir nossas músicas!
+                    </h3>
+                    <div class="playlist">
+                        <a href="https://open.spotify.com/intl-pt/album/0pV0Mx07aMApIpF19oSQgY" target="_blank" rel="">NOSSA PLAYLIST</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/script.js"></script>
+
+    <script>
+        initSlider({
+            autoPlay: true,
+            startAtIndex: 0,
+            timeInterval: 2000
+        })
+    </script>
+</body>
+
+</html>
